@@ -1,0 +1,10 @@
+version: '2'
+
+volumes:
+  lab-redes:
+
+services:
+  mtu: &base
+    image: debian
+    volumes:
+      - lab-redes:/usr/local/mtu
